@@ -1,6 +1,11 @@
-#include <iostream>
+#include"Funciones.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    auto vectors_Rectangulos = Lectura("rectangulos.in");
+
+    auto temp = Ordenar(vectors_Rectangulos);
+
+    Escritura(temp, "Example.txt");
+
     return 0;
 }
